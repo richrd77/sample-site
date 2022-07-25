@@ -38,11 +38,11 @@
             <form class="cont-frm">
                 <div class="cont-fld">
                     <label for="email">Your email</label>
-                    <input class="txt" type="email" name="email" id="email">
+                    <input required class="txt" type="email" name="email" id="email">
                 </div>
                 <div class="cont-fld">
                     <label for="desc">Your query</label>
-                    <textarea class="txt multi" name="desc" id="desc"></textarea>
+                    <textarea required class="txt multi" name="desc" id="desc"></textarea>
                 </div>
                 <button>Submit</button>
             </form>
@@ -57,6 +57,15 @@
         </ul>
         <span class="footer-copy">&copy; 2022</span>
     </footer>
+    <script>
+        const f = document.querySelector('.cont-frm');
+        console.log(f);
+
+        f.addEventListener('submit', (e) => {
+            console.log(f);
+            e.preventDefault();
+        });
+    </script>
 </body>
 
 </html>
