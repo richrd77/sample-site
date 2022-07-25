@@ -57,3 +57,7 @@ footer {
 .footer-social > li {
     margin: 10px 0;
 }
+
+.footer-social > li > a {
+    color: white;
+}

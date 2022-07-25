@@ -1,0 +1,32 @@
+main.home-main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-height: calc(100vh - 200px);
+    padding-top: 2em;
+}
+
+div.heading {
+    flex: 1;
+}
+
+div.main-body {
+    flex: 2;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+div.main-body > img {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: 4px solid #ff000000;
+    outline: 2px solid black;
+}
+
+p.home-content {
+    width: 400px;
+}
